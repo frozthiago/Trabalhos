@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
 ![Última Atualização](https://img.shields.io/badge/Última%20Atualização-Agosto%202025-blue)
 ![Licença](https://img.shields.io/badge/Licença-MIT-green)
-![Tecnologias](https://img.shields.io/badge/Tecnologias-Python%20|%20Java%20|%20C%20|%20JavaScript-orange)
+![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML%20|%20CSS%20|%20C%20|%20JavaScript-orange)
 
 Bem-vindo(a) ao meu repositório!  
 Aqui você encontrará um registro organizado da minha trajetória acadêmica e profissional durante o curso de **Ciência da Computação** na **Universidade Paulista (UNIP)**, bem como experiências práticas adquiridas no estágio.  
