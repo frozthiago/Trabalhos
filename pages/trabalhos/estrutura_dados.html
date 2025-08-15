@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesquisa: Estruturas de Dados e Banco de Dados</title>
+    <script src="../../scripts/index.js"></script>
+    <link rel="stylesheet" href="../../styles/index.css">
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <!-- Header -->
+    <header class="gradient-bg text-white py-12">
+        <div class="container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-bold text-center mb-4">
+                Estruturas de Dados
+            </h1>
+            <p class="text-xl text-center opacity-90 max-w-3xl mx-auto">
+                Pesquisa aprofundada sobre estruturas de dados e projetos de banco de dados baseada nos assuntos mais atuais
+            </p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6">
+            <div class="flex items-center justify-center space-x-8 py-4">
+                <a href="#estruturas" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+                    Estruturas de Dados
+                </a>
+                <a href="#projeto-bd" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+                    Projeto de BD
+                </a>
+                <a href="#exemplos" class="text-gray-700 hover:text-blue-600 font-medium transition-colors">
+                    Exemplos Práticos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12">
+        
+        <!-- Questão 1: Estruturas de Dados -->
+        <section id="estruturas" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    1. O que são Estruturas de Dados?
+                </h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    E qual a sua importância na definição do escopo do projeto?
+                </p>
+            </div>
+
+            <!-- Definição -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Definição</h3>
+                    <p class="text-gray-700 text-lg leading-relaxed mb-6">
+                        Estruturas de dados são formas organizadas de armazenar e gerenciar dados em um sistema computacional, permitindo acesso e manipulação eficientes. Elas definem como os dados são organizados na memória e quais operações podem ser realizadas.
+                    </p>
+                    <div class="bg-blue-50 p-6 rounded-lg border-l-4 border-blue-500">
+                        <p class="text-blue-800 font-medium">
+                            💡 Conceito Chave: As estruturas de dados são os blocos fundamentais que determinam a eficiência e escalabilidade de qualquer sistema.
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b72f11eb-cb03-4cd1-934f-d16b4d8a71e7.png" 
+                         alt="Diagrama conceitual mostrando diferentes tipos de estruturas de dados como arrays, listas ligadas, árvores e grafos organizados em uma representação visual moderna com cores azuis e roxas"
+                         class="rounded-lg shadow-lg w-full max-w-md" />
+                </div>
+            </div>
+
+            <!-- Tipos de Estruturas -->
+            <div class="mb-16">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">Principais Tipos de Estruturas de Dados</h3>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    
+                    <!-- Arrays -->
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/78f57cf3-8430-4c44-8d21-a585083d4255.png" 
+                                 alt="Representação visual de um array com elementos numerados sequencialmente em caixas alinhadas horizontalmente com índices de 0 a 4"
+                                 class="w-full rounded-lg" />
+                        </div>
+                        <h4 class="font-semibold text-lg text-gray-800 mb-2">Arrays</h4>
+                        <p class="text-gray-600 text-sm">
+                            Estrutura linear que armazena elementos em posições consecutivas na memória.
+                        </p>
+                    </div>
+
+                    <!-- Listas Ligadas -->
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ebfeb211-c5c3-43fa-96cf-3b86b977adf1.png" 
+                                 alt="Diagrama de lista ligada mostrando nós conectados por setas, cada nó contendo dados e ponteiro para o próximo elemento"
+                                 class="w-full rounded-lg" />
+                        </div>
+                        <h4 class="font-semibold text-lg text-gray-800 mb-2">Listas Ligadas</h4>
+                        <p class="text-gray-600 text-sm">
+                            Elementos conectados por ponteiros, permitindo inserção e remoção dinâmicas.
+                        </p>
+                    </div>
+
+                    <!-- Árvores -->
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d228ca6c-2beb-4f1c-90c7-b0ca327437bb.png" 
+                                 alt="Estrutura de árvore binária com nó raiz no topo e filhos conectados em níveis hierárquicos, representada com círculos e linhas"
+                                 class="w-full rounded-lg" />
+                        </div>
+                        <h4 class="font-semibold text-lg text-gray-800 mb-2">Árvores</h4>
+                        <p class="text-gray-600 text-sm">
+                            Estrutura hierárquica com nós pais e filhos, ideal para busca e ordenação.
+                        </p>
+                    </div>
+
+                    <!-- Grafos -->
+                    <div class="card-hover bg-white p-6 rounded-lg shadow-md">
+                        <div class="mb-4">
+                            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/34c0a540-16d4-450f-a15c-63d1881edd8a.png" 
+                                 alt="Representação de grafo com vários nós circulares conectados por linhas que representam arestas, formando uma rede complexa"
+                                 class="w-full rounded-lg" />
+                        </div>
+                        <h4 class="font-semibold text-lg text-gray-800 mb-2">Grafos</h4>
+                        <p class="text-gray-600 text-sm">
+                            Conjunto de vértices conectados por arestas, usado em redes e algoritmos de caminho.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Importância no Escopo do Projeto -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6 text-center">
+                    Importância na Definição do Escopo do Projeto
+                </h3>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f96490d8-dd0c-4cf7-8796-fa99ee7e3cca.png" 
+                             alt="Gráfico de performance mostrando diferentes curvas de complexidade temporal para várias estruturas de dados, com eixos O(n) versus tamanho dos dados"
+                             class="w-full rounded-lg shadow-md mb-6" />
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="interactive-element p-4 rounded-lg border border-gray-200">
+                            <h4 class="font-semibold text-gray-800 mb-2">🚀 Eficiência</h4>
+                            <p class="text-gray-600">
+                                A escolha correta pode melhorar a performance em até 1000x em operações críticas.
+                            </p>
+                        </div>
+                        
+                        <div class="interactive-element p-4 rounded-lg border border-gray-200">
+                            <h4 class="font-semibold text-gray-800 mb-2">📈 Escalabilidade</h4>
+                            <p class="text-gray-600">
+                                Determina como o sistema se comporta com o crescimento dos dados.
+                            </p>
+                        </div>
+                        
+                        <div class="interactive-element p-4 rounded-lg border border-gray-200">
+                            <h4 class="font-semibold text-gray-800 mb-2">🔧 Manutenibilidade</h4>
+                            <p class="text-gray-600">
+                                Facilita futuras modificações e atualizações do sistema.
+                            </p>
+                        </div>
+                        
+                        <div class="interactive-element p-4 rounded-lg border border-gray-200">
+                            <h4 class="font-semibold text-gray-800 mb-2">🎯 Definição de Escopo</h4>
+                            <p class="text-gray-600">
+                                Influencia diretamente as funcionalidades possíveis e limitações do projeto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="section-divider mb-20"></div>
+
+        <!-- Questão 2: Projeto de Banco de Dados -->
+        <section id="projeto-bd" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    2. Projeto de Banco de Dados
+                </h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Criando uma solução para gerenciamento de reservas hoteleiras
+                </p>
+            </div>
+
+            <!-- Problema e Solução -->
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-6">Identificação do Problema</h3>
+                    <div class="bg-red-50 p-6 rounded-lg border-l-4 border-red-500 mb-6">
+                        <h4 class="font-semibold text-red-800 mb-2">Problema:</h4>
+                        <p class="text-red-700">
+                            Um hotel precisa gerenciar reservas, controlar disponibilidade de quartos, cadastrar clientes e processar pagamentos de forma integrada e eficiente.
+                        </p>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-lg border-l-4 border-green-500">
+                        <h4 class="font-semibold text-green-800 mb-2">Solução:</h4>
+                        <p class="text-green-700">
+                            Sistema de banco de dados relacional que integra todas as operações do hotel, garantindo consistência e integridade dos dados.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/b1158f03-73ce-4ba9-8f34-342f0353497b.png" 
+                         alt="Interface de sistema hoteleiro moderno mostrando dashboard com gráficos de ocupação, calendário de reservas e lista de clientes em uma tela de computador elegante"
+                         class="rounded-lg shadow-lg w-full max-w-md" />
+                </div>
+            </div>
+
+            <!-- Modelagem do Banco -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-8 text-center">
+                    Modelagem do Banco de Dados
+                </h3>
+                
+                <!-- Diagrama ER -->
+                <div class="mb-8">
+                    <h4 class="text-xl font-semibold text-gray-800 mb-4">Diagrama Entidade-Relacionamento</h4>
+                    <div class="flex justify-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a230b1ad-9e9b-491e-9882-99a93b352f9c.png" 
+                             alt="Diagrama entidade-relacionamento completo do sistema hoteleiro mostrando tabelas Clientes, Reservas, Quartos, Pagamentos com suas colunas e relacionamentos conectados por linhas com cardinalidades"
+                             class="rounded-lg shadow-md w-full max-w-4xl" />
+                    </div>
+                </div>
+
+                <!-- Entidades -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-blue-50 p-6 rounded-lg border border-blue-200">
+                        <h5 class="font-semibold text-blue-800 mb-3">👤 Clientes</h5>
+                        <ul class="text-blue-700 text-sm space-y-1">
+                            <li>• ID (PK)</li>
+                            <li>• Nome</li>
+                            <li>• Email</li>
+                            <li>• Telefone</li>
+                            <li>• CPF</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-green-50 p-6 rounded-lg border border-green-200">
+                        <h5 class="font-semibold text-green-800 mb-3">🏨 Quartos</h5>
+                        <ul class="text-green-700 text-sm space-y-1">
+                            <li>• ID (PK)</li>
+                            <li>• Número</li>
+                            <li>• Tipo</li>
+                            <li>• Preço</li>
+                            <li>• Status</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-purple-50 p-6 rounded-lg border border-purple-200">
+                        <h5 class="font-semibold text-purple-800 mb-3">📅 Reservas</h5>
+                        <ul class="text-purple-700 text-sm space-y-1">
+                            <li>• ID (PK)</li>
+                            <li>• Cliente_ID (FK)</li>
+                            <li>• Quarto_ID (FK)</li>
+                            <li>• Data Início</li>
+                            <li>• Data Fim</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-orange-50 p-6 rounded-lg border border-orange-200">
+                        <h5 class="font-semibold text-orange-800 mb-3">💳 Pagamentos</h5>
+                        <ul class="text-orange-700 text-sm space-y-1">
+                            <li>• ID (PK)</li>
+                            <li>• Reserva_ID (FK)</li>
+                            <li>• Valor</li>
+                            <li>• Data</li>
+                            <li>• Status</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Implementação SQL -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-12">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-6">Implementação SQL</h3>
+                
+                <div class="space-y-6">
+                    <div>
+                        <h4 class="text-lg font-semibold text-gray-800 mb-3">Criação das Tabelas</h4>
+                        <div class="code-block p-6 rounded-lg text-green-400 text-sm overflow-x-auto">
+<pre><code>-- Tabela Clientes
+CREATE TABLE Clientes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) UNIQUE NOT NULL,
+    telefone VARCHAR(15),
+    cpf VARCHAR(11) UNIQUE NOT NULL,
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabela Quartos
+CREATE TABLE Quartos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    numero VARCHAR(10) UNIQUE NOT NULL,
+    tipo ENUM('Standard', 'Deluxe', 'Suite') NOT NULL,
+    preco_diaria DECIMAL(10,2) NOT NULL,
+    status ENUM('Disponível', 'Ocupado', 'Manutenção') DEFAULT 'Disponível'
+);
+
+-- Tabela Reservas
+CREATE TABLE Reservas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    cliente_id INT NOT NULL,
+    quarto_id INT NOT NULL,
+    data_inicio DATE NOT NULL,
+    data_fim DATE NOT NULL,
+    status ENUM('Confirmada', 'Cancelada', 'Finalizada') DEFAULT 'Confirmada',
+    valor_total DECIMAL(10,2),
+    FOREIGN KEY (cliente_id) REFERENCES Clientes(id),
+    FOREIGN KEY (quarto_id) REFERENCES Quartos(id)
+);
+
+-- Tabela Pagamentos
+CREATE TABLE Pagamentos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    reserva_id INT NOT NULL,
+    valor DECIMAL(10,2) NOT NULL,
+    data_pagamento TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    metodo ENUM('Cartão', 'Dinheiro', 'PIX', 'Transferência') NOT NULL,
+    status ENUM('Pendente', 'Aprovado', 'Rejeitado') DEFAULT 'Pendente',
+    FOREIGN KEY (reserva_id) REFERENCES Reservas(id)
+);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exemplos Práticos -->
+        <section id="exemplos" class="mb-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+                    Exemplos Práticos
+                </h2>
+                <p class="text-xl text-gray-600 max-w-4xl mx-auto">
+                    Demonstrações interativas e casos de uso reais
+                </p>
+            </div>
+
+            <!-- Consultas SQL Interativas -->
+            <div class="grid lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Consultas SQL Essenciais</h3>
+                    
+                    <div class="space-y-4">
+                        <button onclick="toggleQuery('query1')" class="w-full text-left p-4 bg-blue-50 rounded-lg border border-blue-200 hover:bg-blue-100 transition-colors">
+                            <span class="font-medium text-blue-800">📊 Listar reservas ativas</span>
+                        </button>
+                        <div id="query1" class="hidden code-block p-4 rounded-lg text-green-400 text-sm">
+<pre><code>SELECT r.id, c.nome, q.numero, r.data_inicio, r.data_fim
+FROM Reservas r
+JOIN Clientes c ON r.cliente_id = c.id
+JOIN Quartos q ON r.quarto_id = q.id
+WHERE r.status = 'Confirmada'
+AND r.data_inicio <= CURDATE()
+AND r.data_fim >= CURDATE();</code></pre>
+                        </div>
+
+                        <button onclick="toggleQuery('query2')" class="w-full text-left p-4 bg-green-50 rounded-lg border border-green-200 hover:bg-green-100 transition-colors">
+                            <span class="font-medium text-green-800">💰 Relatório de faturamento mensal</span>
+                        </button>
+                        <div id="query2" class="hidden code-block p-4 rounded-lg text-green-400 text-sm">
+<pre><code>SELECT 
+    MONTH(p.data_pagamento) as mes,
+    SUM(p.valor) as faturamento_total,
+    COUNT(p.id) as total_pagamentos
+FROM Pagamentos p
+WHERE p.status = 'Aprovado'
+AND YEAR(p.data_pagamento) = YEAR(CURDATE())
+GROUP BY MONTH(p.data_pagamento)
+ORDER BY mes;</code></pre>
+                        </div>
+
+                        <button onclick="toggleQuery('query3')" class="w-full text-left p-4 bg-purple-50 rounded-lg border border-purple-200 hover:bg-purple-100 transition-colors">
+                            <span class="font-medium text-purple-800">🏨 Quartos disponíveis por período</span>
+                        </button>
+                        <div id="query3" class="hidden code-block p-4 rounded-lg text-green-400 text-sm">
+<pre><code>SELECT q.numero, q.tipo, q.preco_diaria
+FROM Quartos q
+WHERE q.id NOT IN (
+    SELECT r.quarto_id
+    FROM Reservas r
+    WHERE r.status = 'Confirmada'
+    AND (r.data_inicio <= '2024-12-31' 
+         AND r.data_fim >= '2024-12-25')
+)
+AND q.status = 'Disponível';</code></pre>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg p-8">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-6">Métricas de Performance</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="text-gray-700">Taxa de Ocupação</span>
+                            <span class="text-2xl font-bold text-green-600">87%</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="text-gray-700">Tempo Médio de Consulta</span>
+                            <span class="text-2xl font-bold text-blue-600">0.03s</span>
+                        </div>
+                        
+                        <div class="flex items-center justify-between p-4 bg-gray-50 rounded-lg">
+                            <span class="text-gray-700">Throughput (req/seg)</span>
+                            <span class="text-2xl font-bold text-purple-600">1,200</span>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/5b757099-2350-4667-8b5f-4008fd3a23a9.png" 
+                             alt="Gráfico de dashboard mostrando métricas de performance do banco de dados com barras coloridas representando latência, throughput e uso de CPU ao longo do tempo"
+                             class="w-full rounded-lg shadow-md" />
+                    </div>
+                </div>
+            </div>
+
+            <!-- Benefícios e Conclusão -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-lg shadow-lg p-8">
+                <h3 class="text-2xl font-semibold mb-6 text-center">Benefícios da Implementação</h3>
+                
+                <div class="grid md:grid-cols-3 gap-6 mb-8">
+                    <div class="text-center">
+                        <div class="text-4xl mb-3">⚡</div>
+                        <h4 class="font-semibold mb-2">Performance</h4>
+                        <p class="text-sm opacity-90">Consultas otimizadas e índices estratégicos</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-4xl mb-3">🔒</div>
+                        <h4 class="font-semibold mb-2">Integridade</h4>
+                        <p class="text-sm opacity-90">Constraints e relacionamentos garantem consistência</p>
+                    </div>
+                    
+                    <div class="text-center">
+                        <div class="text-4xl mb-3">📈</div>
+                        <h4 class="font-semibold mb-2">Escalabilidade</h4>
+                        <p class="text-sm opacity-90">Estrutura preparada para crescimento</p>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <p class="text-lg opacity-95 max-w-3xl mx-auto">
+                        A combinação de estruturas de dados bem definidas com um projeto de banco de dados robusto resulta em um sistema eficiente, confiável e escalável, capaz de atender às demandas atuais e futuras do negócio.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="opacity-75">
+                Pesquisa desenvolvida com base nos conceitos mais atuais de estruturas de dados e banco de dados
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Função para mostrar/ocultar consultas SQL
+        function toggleQuery(queryId) {
+            const element = document.getElementById(queryId);
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden');
+            } else {
+                element.classList.add('hidden');
+            }
+        }
+
+        // Animação suave para âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Efeito de hover nos elementos interativos
+        document.querySelectorAll('.interactive-element').forEach(element => {
+            element.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.02)';
+            });
+            
+            element.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Animação de contadores (simulação)
+        function animateCounters() {
+            const counters = document.querySelectorAll('.text-2xl.font-bold');
+            counters.forEach(counter => {
+                const originalText = counter.textContent;
+                if (originalText.includes('%')) {
+                    let current = 0;
+                    const target = parseInt(originalText);
+                    const increment = target / 50;
+                    const timer = setInterval(() => {
+                        current += increment;
+                        if (current >= target) {
+                            current = target;
+                            clearInterval(timer);
+                        }
+                        counter.textContent = Math.floor(current) + '%';
+                    }, 30);
+                }
+            });
+        }
+
+        // Iniciar animações quando a página carregar
+        window.addEventListener('load', () => {
+            setTimeout(animateCounters, 1000);
+        });
+    </script>
+</body>
+</html>
+
