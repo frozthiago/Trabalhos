@@ -20,7 +20,7 @@ Aqui você encontrará um registro organizado da minha trajetória acadêmica e 
 ## 🏫 Informações Acadêmicas
 - **Curso:** Ciência da Computação  
 - **Instituição:** Universidade Paulista (UNIP)  
-- **Período Atual:** 4º Período (início)  
+- **Período Atual:** 4º Período 
 - **Previsão de Conclusão:** Dezembro/2027  
 
 ---
@@ -29,17 +29,23 @@ Aqui você encontrará um registro organizado da minha trajetória acadêmica e 
 
 | Área               | Tecnologias/Ferramentas |
 |--------------------|--------------------------|
-| **Linguagens**     | Python 🐍, Java ☕, C 💻, JavaScript 🌐 |
+| **Linguagens**     |HTML, CSS, JavaScript 🌐|
 | **Controle de Versão** | Git 🗂, GitHub 🐙 |
-| **IDEs/Editors**   | VS Code 📝, IntelliJ IDEA 🚀 |
-| **Conceitos**      | POO, Estruturas de Dados, Algoritmos |
+| **IDEs/Editors**   | VS Code 📝|
+| **Conceitos**      | Estruturas de Dados, Algoritmos |
 
 ---
 
 ## 📂 Estrutura do Repositório
 ```bash
 /
-├── trabalhos_academicos/    # Pesquisas, artigos e trabalhos da faculdade
-├── projetos/                # Projetos desenvolvidos durante o curso
-├── estagio/                  # Atividades e aprendizados do estágio
+├── pages/
+│   ├── pessoal/              # Páginas com informações pessoais
+│   └── estagio/              # Atividades e aprendizados do estágio
+├── scripts/
+│   └── index.js              # Script principal do site
+├── styles/
+│   └── index.css             # Estilos principais do site
+├── index.html                # Página inicial
 └── README.md                 # Documento atual
+
