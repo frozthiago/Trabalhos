@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de Padrões de Projeto - Resolvidos</title>
+    <link rel="stylesheet" href="../../styles/lpoo.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Exercícios de Padrões de Projeto - Resolvidos</h1>
+        <p>Esta página demonstra a aplicação de diversos Padrões de Projeto em cenários práticos, conforme exercícios propostos em minha formação acadêmica. Cada seção aborda um padrão específico, detalhando sua aplicação e os benefícios que ele oferece.</p>
+
+        <h2>Parte 1: Implementação de Padrões de Projeto</h2>
+
+        <div class="section">
+            <h3>1. Singleton – Configurações Globais do Sistema</h3>
+            <p><strong>Problema:</strong> Uma empresa de software precisa garantir que as configurações de idioma e fuso horário sejam únicas e acessíveis globalmente.</p>
+            <p><strong>Solução:</strong> Criar uma classe <code>ConfiguracaoSistema</code> que utilize o padrão Singleton para garantir que só exista uma instância no sistema.</p>
+            <ul>
+                <li>O sistema deve permitir alterar e exibir o idioma e o fuso horário.</li>
+                <li>Demonstrar que ao alterar as configurações em um local, a mudança reflete em todo o sistema.</li>
+            </ul>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Singleton é ideal para este cenário, pois garante que apenas uma instância da classe de configuração seja criada e que ela seja globalmente acessível. Isso evita inconsistências e duplicação de dados de configuração.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>2. Factory Method – Criação de Documentos</h3>
+            <p><strong>Problema:</strong> Uma ferramenta de escritório digital deve permitir que o usuário crie documentos em diferentes formatos (PDF, Word, Planilha) sem precisar saber a lógica de construção.</p>
+            <p><strong>Solução:</strong> Implementar uma fábrica usando o padrão Factory Method para criar objetos de cada tipo, cada um com um método <code>abrir()</code>.</p>
+            <ul>
+                <li>O programa principal deve receber do usuário o tipo de documento e abri-lo.</li>
+            </ul>
+            <div class="answer">
+                <strong>Resolução:</strong> O Factory Method permite que a lógica de criação de objetos seja encapsulada em subclasses, tornando o sistema mais flexível e extensível. O cliente (programa principal) interage apenas com a interface da fábrica, sem se preocupar com os detalhes de implementação dos tipos de documentos.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>3. Builder – Montagem de Computadores</h3>
+            <p><strong>Problema:</strong> Uma loja de informática deseja permitir que clientes montem computadores personalizados.</p>
+            <p><strong>Solução:</strong> Criar a classe <code>Computador</code> com atributos como processador, memoriaRAM, armazenamento e placaVideo. Usar o padrão Builder para criar computadores de forma flexível.</p>
+            <ul>
+                <li>Exemplo: um computador básico para escritório e outro “gamer” com alto desempenho.</li>
+            </ul>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Builder é perfeito para construir objetos complexos passo a passo. Ele separa a construção de um objeto de sua representação, permitindo que o mesmo processo de construção crie diferentes representações do objeto. Isso é ideal para a montagem de computadores com diversas configurações.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>4. Prototype – Clonagem de Figuras</h3>
+            <p><strong>Problema:</strong> Um software de design precisa criar rapidamente cópias de figuras gráficas mantendo suas propriedades.</p>
+            <p><strong>Solução:</strong> Criar a classe <code>Figura</code> com atributos como cor e tamanho e implementar o método <code>clone()</code>.</p>
+            <ul>
+                <li>Criar um objeto original e gerar um clone mudando apenas a cor.</li>
+                <li>Mostrar que o clone mantém as demais características.</li>
+            </ul>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Prototype permite criar novos objetos copiando um objeto existente (o protótipo). Isso é mais eficiente do que criar um novo objeto do zero, especialmente quando o processo de criação é complexo ou caro. A clonagem garante que as propriedades originais sejam mantidas, facilitando modificações pontuais.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>5. Adapter – Compatibilidade de Formatos de Áudio</h3>
+            <p><strong>Problema:</strong> Um sistema de música possui um player que aceita apenas arquivos MP3, mas agora precisa reproduzir arquivos WAV.</p>
+            <p><strong>Solução:</strong> Implementar uma interface <code>ReprodutorAudio</code> e um <code>ReprodutorMP3</code> compatível. Usar o padrão Adapter para permitir que um <code>ReprodutorWAV</code> funcione no mesmo sistema sem modificar o código original.</p>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Adapter atua como uma ponte entre duas interfaces incompatíveis. Ele permite que objetos com interfaces diferentes colaborem, sem a necessidade de modificar o código existente. Neste caso, o Adapter "traduz" a interface do ReprodutorWAV para que seja compatível com o sistema que espera um ReprodutorMP3.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>6. Decorator – Personalização de Café</h3>
+            <p><strong>Problema:</strong> Uma cafeteria quer permitir que clientes montem cafés com ingredientes extras pagando valores adicionais.</p>
+            <p><strong>Solução:</strong> Criar uma interface <code>Cafe</code> com o método <code>custo()</code>. Classe base: <code>CafeSimples</code>. Decoradores: <code>Leite</code>, <code>Chocolate</code>, <code>Chantilly</code>. Usar o padrão Decorator para adicionar funcionalidades sem mudar o código do café base.</p>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Decorator permite adicionar novas funcionalidades a um objeto dinamicamente, sem alterar sua estrutura. Ele é uma alternativa flexível à herança para estender funcionalidades. Cada "decorador" (Leite, Chocolate, Chantilly) envolve o objeto de café base, adicionando seu próprio custo e descrição.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>7. Observer – Sistema de Notificação de Clima</h3>
+            <p><strong>Problema:</strong> Um centro meteorológico precisa notificar diferentes canais quando o clima mudar.</p>
+            <p><strong>Solução:</strong> Implementar o padrão Observer onde a classe <code>EstacaoClimatica</code> notifica <code>DisplayTV</code> e <code>AplicativoClima</code> sobre mudanças de clima.</p>
+            <ul>
+                <li>Quando a estação mudar o estado, todos os observadores devem ser informados automaticamente.</li>
+            </ul>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Observer define uma dependência um-para-muitos entre objetos, de modo que quando um objeto muda de estado, todos os seus dependentes são notificados e atualizados automaticamente. A Estação Climática é o "sujeito" e os Displays de TV e Aplicativos de Clima são os "observadores".
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>8. Strategy – Cálculo de Frete</h3>
+            <p><strong>Problema:</strong> Um e-commerce deseja calcular frete com diferentes estratégias: Sedex, PAC e RetiradaLocal.</p>
+            <p><strong>Solução:</strong> Implementar a interface <code>EstrategiaFrete</code> com o método <code>calcular(double peso)</code>. O sistema deve permitir trocar a estratégia em tempo de execução sem alterar o código principal.</p>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Strategy permite definir uma família de algoritmos, encapsular cada um deles e torná-los intercambiáveis. A estratégia de frete pode ser alterada dinamicamente, sem modificar o código que a utiliza. Isso promove a flexibilidade e a manutenção do código.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>9. Command – Controle Remoto</h3>
+            <p><strong>Problema:</strong> Uma empresa de automação residencial quer criar um controle remoto universal que execute comandos em dispositivos diferentes.</p>
+            <p><strong>Solução:</strong> Implementar a interface <code>Comando</code> e criar comandos como <code>LigarTV</code>, <code>DesligarTV</code> e <code>AumentarVolume</code>. O padrão Command deve encapsular a ação e permitir que o controle remoto execute qualquer comando atribuído.</p>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Command encapsula uma solicitação como um objeto, permitindo parametrizar clientes com diferentes solicitações, enfileirar ou registrar solicitações e suportar operações desfazíveis. O controle remoto não precisa saber os detalhes da operação, apenas invocar o comando.
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>10. Template Method – Relatórios</h3>
+            <p><strong>Problema:</strong> Uma empresa gera relatórios financeiros e de vendas com um fluxo comum: Coletar dados, Processar, Formatar, Exibir.</p>
+            <p><strong>Solução:</strong> Criar uma classe abstrata <code>Relatorio</code> usando o padrão Template Method e subclasses que implementem detalhes específicos para <code>RelatorioFinanceiro</code> e <code>RelatorioVendas</code>.</p>
+            <div class="answer">
+                <strong>Resolução:</strong> O padrão Template Method define o esqueleto de um algoritmo em uma operação, adiando alguns passos para subclasses. Ele permite que as subclasses redefinam certos passos de um algoritmo sem mudar a estrutura do algoritmo. Isso é ideal para relatórios com etapas comuns, mas detalhes de processamento diferentes.
+            </div>
+        </div>
+
+        <h2>Parte 2: Questões de Múltipla Escolha</h2>
+
+        <div class="multiple-choice-question">
+            <p><strong>1. Um software corporativo precisa controlar a quantidade de licenças ativas no sistema, garantindo que todas as partes do programa consultem a mesma instância responsável por esse controle. Qual padrão deve ser usado?</strong></p>
+            <ul>
+                <li>A) Builder</li>
+                <li>B) Adapter</li>
+                <li class="correct-answer">C) Singleton</li>
+                <li>D) Strategy</li>
+                <li>E) Prototype</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: C) Singleton.</strong> O Singleton garante que uma classe tenha apenas uma instância e fornece um ponto de acesso global a ela, ideal para controle de licenças.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>2. Um banco digital precisa criar contas de tipos diferentes (corrente, poupança, salário) dependendo da solicitação do cliente, sem que o código principal precise conhecer a lógica de criação de cada tipo. Qual padrão resolve isso?</strong></p>
+            <ul>
+                <li class="correct-answer">A) Factory Method</li>
+                <li>B) Singleton</li>
+                <li>C) Template Method</li>
+                <li>D) Decorator</li>
+                <li>E) Observer</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: A) Factory Method.</strong> O Factory Method define uma interface para criar um objeto, mas permite que as subclasses decidam qual classe instanciar, delegando a lógica de criação.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>3. Uma montadora quer permitir que clientes configurem um carro escolhendo motor, cor, tipo de banco e acessórios. Cada configuração deve gerar um objeto final pronto para uso. Qual padrão de projeto é o mais indicado?</strong></p>
+            <ul>
+                <li>A) Adapter</li>
+                <li class="correct-answer">B) Builder</li>
+                <li>C) Prototype</li>
+                <li>D) Command</li>
+                <li>E) Strategy</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: B) Builder.</strong> O Builder é usado para construir objetos complexos passo a passo, permitindo diferentes configurações do mesmo objeto.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>4. Em um jogo de RPG, o jogador pode criar vários personagens iguais a um modelo existente e apenas modificar alguns atributos, como cor da roupa ou arma utilizada. Qual padrão é mais apropriado?</strong></p>
+            <ul>
+                <li class="correct-answer">A) Prototype</li>
+                <li>B) Builder</li>
+                <li>C) Strategy</li>
+                <li>D) Command</li>
+                <li>E) Singleton</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: A) Prototype.</strong> O Prototype permite criar novos objetos copiando um objeto existente, o que é eficiente para criar muitas instâncias semelhantes com pequenas variações.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>5. Um sistema de e-commerce utiliza um módulo de pagamento que só aceita dados em formato XML, mas a nova API de pagamentos fornece dados em JSON. Qual padrão é adequado para compatibilizar os dois formatos sem modificar o código original?</strong></p>
+            <ul>
+                <li class="correct-answer">A) Adapter</li>
+                <li>B) Template Method</li>
+                <li>C) Observer</li>
+                <li>D) Builder</li>
+                <li>E) Command</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: A) Adapter.</strong> O Adapter permite que interfaces incompatíveis trabalhem juntas, convertendo a interface de uma classe para outra que o cliente espera.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>6. Um aplicativo de mensagens permite adicionar funcionalidades extras às notificações, como sons diferentes, ícones personalizados e vibração especial, sem modificar a classe de notificação original. Qual padrão é usado?</strong></p>
+            <ul>
+                <li class="correct-answer">A) Decorator</li>
+                <li>B) Strategy</li>
+                <li>C) Prototype</li>
+                <li>D) Observer</li>
+                <li>E) Command</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: A) Decorator.</strong> O Decorator permite adicionar responsabilidades a objetos individualmente e dinamicamente, sem alterar sua estrutura.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>7. Um supermercado quer que vários sistemas (caixas, controle de estoque, compras online) sejam atualizados automaticamente sempre que o estoque de um produto mudar. Qual padrão se aplica?</strong></p>
+            <ul>
+                <li>A) Builder</li>
+                <li>B) Singleton</li>
+                <li class="correct-answer">C) Observer</li>
+                <li>D) Command</li>
+                <li>E) Template Method</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: C) Observer.</strong> O Observer define uma dependência um-para-muitos, onde múltiplos objetos são notificados automaticamente quando o estado de um objeto muda.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>8. Um sistema contábil precisa calcular impostos de acordo com o regime da empresa (Simples Nacional, Lucro Presumido ou Lucro Real). A fórmula de cálculo muda, mas o processo geral é o mesmo. Qual padrão é o mais indicado?</strong></p>
+            <ul>
+                <li>A) Factory Method</li>
+                <li class="correct-answer">B) Strategy</li>
+                <li>C) Observer</li>
+                <li>D) Singleton</li>
+                <li>E) Prototype</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: B) Strategy.</strong> O Strategy permite que diferentes algoritmos (estratégias de cálculo de imposto) sejam encapsulados e trocados em tempo de execução.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>9. Um editor de texto possui ações como "copiar", "colar" e "desfazer", que devem ser encapsuladas para que possam ser executadas e revertidas quando necessário. Qual padrão representa essa abordagem?</strong></p>
+            <ul>
+                <li>A) Strategy</li>
+                <li class="correct-answer">B) Command</li>
+                <li>C) Template Method</li>
+                <li>D) Observer</li>
+                <li>E) Builder</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: B) Command.</strong> O Command encapsula uma solicitação como um objeto, permitindo que as operações sejam enfileiradas, registradas e desfeitas.
+            </div>
+        </div>
+
+        <div class="multiple-choice-question">
+            <p><strong>10. Um sistema de leitura de arquivos segue sempre o mesmo fluxo: abrir o arquivo, processar os dados, gerar o relatório e fechar o arquivo. O processamento é diferente para arquivos CSV e XML, mas as etapas principais são fixas. Qual padrão representa essa solução?</strong></p>
+            <ul>
+                <li class="correct-answer">A) Template Method</li>
+                <li>B) Adapter</li>
+                <li>C) Factory Method</li>
+                <li>D) Decorator</li>
+                <li>E) Singleton</li>
+            </ul>
+            <div class="answer">
+                <strong>Resposta Correta: A) Template Method.</strong> O Template Method define o esqueleto de um algoritmo em uma superclasse, permitindo que as subclasses implementem ou redefinam certas etapas sem alterar a estrutura geral.
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

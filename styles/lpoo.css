@@ -1,0 +1,93 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        h1 {
+            text-align: center;
+            border-bottom: 3px solid #0056b3;
+            padding-bottom: 15px;
+            margin-bottom: 40px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section p {
+            margin-bottom: 10px;
+        }
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+        .section ul li {
+            margin-bottom: 5px;
+        }
+        .question-block {
+            background-color: #e9f7ff;
+            border-left: 5px solid #007bff;
+            padding: 15px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+        .question-block strong {
+            color: #0056b3;
+        }
+        .answer {
+            background-color: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 5px;
+            color: #155724;
+        }
+        .answer strong {
+            color: #155724;
+        }
+        .multiple-choice-question {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+        }
+        .multiple-choice-question strong {
+            color: #0056b3;
+        }
+        .multiple-choice-question ul {
+            list-style-type: upper-alpha;
+            margin-left: 25px;
+            padding-left: 0;
+        }
+        .multiple-choice-question ul li {
+            margin-bottom: 5px;
+        }
+        .correct-answer {
+            font-weight: bold;
+            color: #28a745;
+        }
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: #777;
+            font-size: 0.9em;
+        }
